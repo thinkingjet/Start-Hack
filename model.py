@@ -59,5 +59,9 @@ def text_to_prompt(query):
             "to better help the students understand and grasp the topic and also improve engagement if possible. Also, provide "
             "detailed feedback on things I did well and should continue to do. Be as specific as possible with all feedback and "
             "include lots of detail. Provide feedback as you deem fit. Also, give a numerical rating out of 5 stars. Use the Star emojis to show the rating, with each emoji representing one star. Make sure to use nice formatting to make the text look clean. " + query
-        ))
+        ),
+        temperature=0.7,
+        top_p=1,
+        frequency_penalty=0,
+        presence_penalty=0)
     return response['choices'][0]['text']
