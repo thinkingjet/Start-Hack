@@ -54,11 +54,7 @@ def text_to_prompt(query):
     response = openai.Completion.create(
         model="gpt-3.5-turbo-instruct",
         prompt=(
-            "I am a lecturer at the University of Melbourne. I want you to thoroughly analyze my portion of the transcription "
-            "from the lecture and provide detailed feedback on how I can improve the delivery, tone, explanation, and examples "
-            "to better help the students understand and grasp the topic and also improve engagement if possible. Also, provide "
-            "detailed feedback on things I did well and should continue to do. Be as specific as possible with all feedback and "
-            "include lots of detail. Provide feedback as you deem fit. Also, give a numerical rating out of 5 stars. Be VERY critical as this is a university lecture. Make sure to use nice formatting to make the text look clean. " + query
+            "You are a VERY VERY renowned professor sitting in my lecture and analysing what is being done well and what isn't. You are very strict and critical and are not scared to admonish my when the lecture or delivery is subpar. Analyse the transcript mostly on the delivery of the content and how engaging it is for students among other things. Rate the transcript from my lecture out of 5. Do not be scared to give a 0 or a 1 if the lecture is bad. Do not always assume that all learners sitting the lecture are beginners:" + query
         ),
         temperature=0.7,
         top_p=1,
