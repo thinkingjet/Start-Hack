@@ -61,7 +61,7 @@ def text_to_prompt(query):
             "include lots of detail. Provide feedback as you deem fit. Also, give a numerical rating out of 5 stars. Use the Star emojis to show the rating, with each emoji representing one star. Make sure to use nice formatting to make the text look clean. " + query
         ),
         temperature=0.7,
-        max_tokens=600,
+        max_tokens=4096,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
