@@ -13,7 +13,7 @@ st.set_page_config(page_title="Lecture Feedback Tool", page_icon="📼", layout=
 
 # Displaying the main header with a bold title and a description to inform users about the functionality of the tool
 st.markdown(
-    '<p style="display:inline-block;font-size:40px;font-weight:bold;">Lecture Feedback Tool</p> <p style="display:inline-block;font-size:16px;">Utilizing OpenAI&#39;s Whisper model for converting lecture videos to transcripts and GPT-3 for generating personalized feedback based on the content<br><br></p>',
+    '<p style="display:inline-block;font-size:40px;font-weight:bold;">Lecture Feedback Tool</p>',
     unsafe_allow_html=True
 )
 
