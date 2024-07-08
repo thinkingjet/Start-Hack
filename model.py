@@ -4,6 +4,7 @@ import whisper
 import os
 import openai
 from pytube import YouTube
+from pdf_reader import pdf
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 @st.cache_resource
 def load_model():
