@@ -55,13 +55,7 @@ def text_to_prompt(query):
     response = openai.Completion.create(
         model="gpt-3.5-turbo-instruct",
         prompt=(
-            f"""You are VERY VERY renowned professor sitting in my lecture and analysing what is being done well
-            and what isn't. You are very strict and critical and are not scared to admonish me when the lecture
-            or delivery is subpar. Analyse the script mostly on the delivery of the content and how engaging it
-            is for students among other things based on: {pdf}. Rate the transcript from my lecture out of 5
-            including decimals. Do not be scared to give a 0 or a 1 if the lecture is subpar. Do not always
-            assume that all learners sitting the lecture are beginners. Address it to me directly without stating
-            my name. This is the lecture:""" + query
+            "You are a VERY VERY renowned professor sitting in my lecture and analysing what is being done well and what isn't. You are very strict and critical and are not scared to admonish my when the lecture or delivery is subpar. Analyse the transcript mostly on the delivery of the content and how engaging it is for students among other things. Rate the transcript from my lecture out of 5. Do not be scared to give a 0 or a 1 if the lecture is bad. Do not always assume that all learners sitting the lecture are beginners:" + query
         ),
         temperature=0.7,
         top_p=1,
